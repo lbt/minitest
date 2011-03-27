@@ -1,0 +1,5 @@
+minitest (2.0.2-1) UNRELEASED; urgency=low
+
+  * Initial release (Closes: #nnnn)
+
+ -- David Greaves <david@ash.dgreaves.com>  Sun, 27 Mar 2011 18:35:44 +0100
