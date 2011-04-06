@@ -1,5 +1,11 @@
-minitest (2.0.2-1) UNRELEASED; urgency=low
+ruby-minitest (2.0.2-2) unstable; urgency=low
 
-  * Initial release (Closes: #nnnn)
+  * Update to gem2deb 0.2.1
+
+ -- David Greaves <david@dgreaves.com>  Wed, 06 Apr 2011 15:02:18 +0100
+
+ruby-minitest (2.0.2-1) UNRELEASED; urgency=low
+
+  * Initial release based on gem2deb
 
  -- David Greaves <david@ash.dgreaves.com>  Sun, 27 Mar 2011 18:35:44 +0100

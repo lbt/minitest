@@ -1,38 +1,45 @@
-Source: minitest
+Source: ruby-minitest
 Section: ruby
 Priority: optional
 Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
 Uploaders:  <>
 DM-Upload-Allowed: yes
-Build-Depends: debhelper (>= 7.0.50~), gem2deb (>= 0.1.0)
+Build-Depends: debhelper (>= 7.0.50~), gem2deb (>= 0.2.1)
 Standards-Version: 3.9.1
-#Vcs-Git: git://git.debian.org/collab-maint/libnet-jabber-loudmouth-perl.git
-#Vcs-Browser: http://git.debian.org/?p=collab-maint/libnet-jabber-loudmouth-perl.git;a=summary
+#Vcs-Git: git://git.debian.org/pkg-ruby-extras/ruby-minitest.git
+#Vcs-Browser: http://git.debian.org/?p=pkg-ruby-extras/ruby-minitest;a=summary
 Homepage: http://rubyforge.org/projects/bfts
+XS-Ruby-Versions: all
 
 Package: ruby-minitest
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}
-# minitest (>= 2.0.0), hoe (>= 2.8.0)
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ${shlibs:Depends}, ${misc:Depends}, ruby1.8 | ruby-interpreter
+# minitest (>= 2.0.0, development), hoe (>= 2.8.0, development)
 Description: minitest provides a complete suite of testing facilities supporting TDD, BDD, mocking, and benchmarking
  minitest provides a complete suite of testing facilities supporting
  TDD, BDD, mocking, and benchmarking.
- .\n minitest/unit is a small and incredibly fast unit testing framework.
+ .
+ minitest/unit is a small and incredibly fast unit testing framework.
  It provides a rich set of assertions to make your tests clean and
  readable.
- .\n minitest/spec is a functionally complete spec engine. It hooks onto
+ .
+ minitest/spec is a functionally complete spec engine. It hooks onto
  minitest/unit and seamlessly bridges test assertions over to spec
  expectations.
- .\n minitest/benchmark is an awesome way to assert the performance of your
+ .
+ minitest/benchmark is an awesome way to assert the performance of your
  algorithms in a repeatable manner. Now you can assert that your newb
  co-worker doesn't replace your linear algorithm with an exponential
  one!
- .\n minitest/mock by Steven Baker, is a beautifully tiny mock object
+ .
+ minitest/mock by Steven Baker, is a beautifully tiny mock object
  framework.
- .\n minitest/pride shows pride in testing and adds coloring to your test
+ .
+ minitest/pride shows pride in testing and adds coloring to your test
  output.
- .\n minitest/unit is meant to have a clean implementation for language
+ .
+ minitest/unit is meant to have a clean implementation for language
  implementors that need a minimal set of methods to bootstrap a working
  test suite. For example, there is no magic involved for test-case
  discovery.
-
